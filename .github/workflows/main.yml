@@ -47,7 +47,7 @@ jobs:
         docker build -t docker.pkg.github.com/action/gitaction/deploy.   
      
 		-name: Docker login
-			run: |  
+                  	run: |  
 			docker login docker.pkg.github.com -u bayero -p ${{ secrets.GITHUB_TOKEN }} 
         
     - name: Docker push       
